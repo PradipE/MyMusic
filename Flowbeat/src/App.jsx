@@ -1,15 +1,14 @@
-import { useState } from 'react'
+import React from 'react'
+import Sidebar from './component/Sidebar'
 
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+function App() { 
   return (
     <>
-    <div className='w-20 h-20 bg-green-600 text-xl'>
-      <h1 className=''>Flowbeat</h1>
-    </div>
+     <div className='h-screen bg-black'>
+      <div className='h-[90%] flex'>
+         <Sidebar/>
+      </div>
+     </div>
     </>
   )
 }
